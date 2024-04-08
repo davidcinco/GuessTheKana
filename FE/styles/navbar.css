@@ -1,0 +1,33 @@
+* {
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    overflow: hidden;
+}
+
+div.container-fluid {
+    display: flex;
+}
+
+ul li{
+    list-style-type: none;
+    margin: 0rem .4rem;
+    font-size: 1.25rem;
+}
+ul.navbar-nav{
+    display: flex;
+}
+
+
+ul.navbar-mobile-nav {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(15, 15, 15, 0.079);
+}
+ul.navbar-mobile-nav li{
+    
+}
+
+a {
+    text-decoration: none;
+}
+
