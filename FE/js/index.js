@@ -1,7 +1,7 @@
-let title = document.getElementById("h1Title");
-let nameInput = document.getElementById("nameInput");
+const API = require('../js/api');
 
-function loadData(){
-    console.log(nameInput.value);
-    title.innerText = `Hello ${nameInput.value}`
+async function runApi(){
+    const response = await fetch(API);
+    const res = await response.json();
+    console.log(res);
 }
