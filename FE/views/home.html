@@ -25,9 +25,11 @@
             <li><a href="/views/katakana.html">Katakana</a></li>
             <li><a href="/views/about.html">About</a></li>
           </ul>
+
+          <button id="navbar-mobile-button" class="navbar-mobile-button" onclick="navMobileMenuButton()">X</button>
         </div>
 
-        <div class="navbar-mobile">
+        <div id="navbar-mobile" class="navbar-mobile">
           <ul class="navbar-mobile-nav">
             <li><a href="/views/home.html">Home</a></li>
             <li><a href="/views/hiragana.html">Hiragana</a></li>
@@ -37,8 +39,56 @@
         </div>
     </nav>
 
-    <h1>Home</h1>
+    <main class="main-container">
 
-    <script type="text/javascript" src="./js/index.js"></script>
+      <div style="background-color: antiquewhite; padding: .5em">
+        <p style="text-align: center; font-size: 1.50rem">
+          It's time to practice your kanas, 
+          click one of the options down below to 
+          start practicing.
+        </p>
+      </div>
+
+      <div class="div-kana-section">
+        <!--Hiragana-->
+        <a href="/views/hiragana.html" class="div-kana-section-option ">
+          <div class="div-kana-section-hiragana">
+            <h2>Hiragana</h2>
+          </div>
+        </a>
+        <!--Katakana-->
+        <a href="/views//katakana.html" class="div-kana-section-option ">
+          <div class="div-kana-section-katakana">
+            <h2>Katakana</h2>
+          </div>
+        </a>
+        <div>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <h2>What is Hiragana and Katakana?</h2>
+        </div>
+
+        <div>
+          <p style="background-color: rgb(244, 244, 244); padding: .5em; border-radius: 4px">
+            Why do Japanese characters look so different from each other? 
+            In fact, Japanese has three different writing systems:
+            hiragana, katakana, and kanji.
+
+            These are Japanese syllabary, part of the Japanese writing
+            system, along with kanji.
+            Hiragana and katakana are both kana systems.
+            With few exceptions, each mora in the Japanese language
+            is represented by one character (or one digraph) in each system.
+          </p>
+        </div>
+      </div>
+
+    </main>
+
+    <script type="text/javascript" src="../js/navbar.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
 </body>
 </html>

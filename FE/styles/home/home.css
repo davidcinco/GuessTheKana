@@ -1,0 +1,41 @@
+main.main-container{
+    margin: .5em;
+    padding: .5em;
+}
+
+div.div-kana-section{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+div.div-kana-section a{
+    height: 150px;
+}
+
+a.div-kana-section-option{
+    width: -webkit-fill-available;
+    background-color: red;
+}
+
+a.div-kana-section-option h2{
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    vertical-align: "middle";
+}
+
+a.div-kana-section-option div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+div.div-kana-section-hiragana{
+    background-color: rgb(219, 37, 37);
+}
+div.div-kana-section-katakana{
+    background-color: rgb(243, 55, 55);
+}

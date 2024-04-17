@@ -1,11 +1,28 @@
 * {
     font-family: "Rubik", sans-serif;
     font-style: normal;
-    overflow: hidden;
+}
+
+html, body{
+    margin: 0;
+}
+
+nav.navbar{
+    padding: 0.5em;
+    background-color: red;
 }
 
 div.container-fluid {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+/*desktop/laptop nav*/
+h1 a.navbar-brand{
+    color: white;
+    text-shadow: 1px 1px black;
 }
 
 ul li{
@@ -14,20 +31,44 @@ ul li{
     font-size: 1.25rem;
 }
 ul.navbar-nav{
-    display: flex;
+    display: none;
 }
 
+ul.navbar-nav li a{
+    color: white;
+    font-size: 1.15rem;
+}
 
+/*mobile nav*/
 ul.navbar-mobile-nav {
+    display: flex;
+    flex-direction: column;
     margin: 0;
-    padding: 0;
+    padding: .5em;
+    width: -webkit-fill-available;
     background-color: rgba(15, 15, 15, 0.079);
 }
 ul.navbar-mobile-nav li{
-    
 }
 
-a {
+ul.navbar-mobile-nav li a {
+    display: block;
+    padding: .5em 0em;
+    color: white;
+    font-size: 1.15rem;
+}
+
+button.navbar-mobile-button{
+    display: block;
+    padding: .2em .75em;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(210, 37, 63);
+    color: white;
+    font-size: 1.85rem;
+}
+
+a{
     text-decoration: none;
 }
 

@@ -1,0 +1,25 @@
+main.main-container{
+    margin: .5em;
+    padding: .5em;
+}
+
+main.main-container h3{
+    text-align: center;
+}
+
+div.div-main-social-media{
+    display: flex;
+    justify-content: center;
+}
+
+div.div-social-media{
+    margin: 1rem;
+}
+
+div.div-social-media:hover{
+    opacity: .8;
+}
+
+div.div-social-media img{
+    width: 100px;
+}

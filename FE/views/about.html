@@ -6,22 +6,68 @@
     <link rel="stylesheet" href="/styles/navbar.css">
     <link rel="stylesheet" href="/styles/about/about.css">
     <link rel="stylesheet" href="/styles/screenQueries.css">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <title>About</title>
 </head>
 <body>
-    <!--bar-->
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <h1><a class="navbar-brand" href="#">Guess The Kana</a></h1>
-          </div>
-          <ul class="nav navbar-nav">
-            <li><a href="/views/home.html">Home</a></li>
-            <li><a href="/views/hiragana.html">Hiragana</a></li>
-            <li><a href="/views/katakana.html">Katakana</a></li>
-            <li><a href="/views/about.html">About</a></li>
-          </ul>
-        </div>
-      </nav>
+  <!--bar-->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <h1><a class="navbar-brand" href="#">Guess The Kana</a></h1>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="/views/home.html">Home</a></li>
+        <li><a href="/views/hiragana.html">Hiragana</a></li>
+        <li><a href="/views/katakana.html">Katakana</a></li>
+        <li><a href="/views/about.html">About</a></li>
+      </ul>
+      <button class="navbar-mobile-button" onclick="navMobileMenuButton()">X</button>
+    </div>
+
+    <div id="navbar-mobile" class="navbar-mobile">
+      <ul class="navbar-mobile-nav">
+        <li><a href="/views/home.html">Home</a></li>
+        <li><a href="/views/hiragana.html">Hiragana</a></li>
+        <li><a href="/views/katakana.html">Katakana</a></li>
+        <li><a href="/views/about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <main class="main-container">
+    <div style="display: flex; justify-content:center">
+      <h3 class="about-h3">This project was made with the 
+      purpose of getting hands on HTML, 
+      CSS and Vanilla Javascript. 
+      No CSS and JS Frameworks.
+      </h3>
+    </div>
+
+    <p style="text-align: center;">You can find me here!</p>
+    <!--social medias-->
+    <div class="div-main-social-media">
+      <!--LinkedIn-->
+      <div class="div-social-media div-social-media-linkedin">
+        <a href="https://www.linkedin.com/in/davidcinco/" target="_blank">
+          <img src="../img/LinkedIn_icon.svg.png" alt="">
+        </a>
+      </div>
+      <!--Github-->
+      <div class="div-social-media div-social-media-github">
+        <a href="https://github.com/DavidCinco" target="_blank">
+          <img src="../img/github_icon.png" alt="">
+        </a>
+      </div>
+
+    </div>
+
+  </main>
+
+  <script type="text/javascript" src="../js/navbar.js"></script>
 </body>
 </html>

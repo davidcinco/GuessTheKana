@@ -1,8 +1,5 @@
 /*@media queries for navbar menu/mobile navbar*/
 @media screen and (min-width: 320px) {
-    ul.navbar-nav{
-        display: none;
-    }
     ul.navbar-mobile-nav, li, a{
         font-size: 1rem;
     }
@@ -17,21 +14,48 @@
 }
 
 @media screen and (min-width: 480px) {
-    
+    ul.navbar-mobile-nav{
+        flex-direction: row;
+    }
+
 }
 
 @media screen and (min-width: 600px) {
-    ul.navbar-nav{
-        display: block;
+    div.div-kana-section{
+        flex-direction: row;
     }
 }
 
 @media screen and (min-width: 801px) {
+
+    h3.about-h3{
+        width: 80%;
+    }
     
 }
 
+@media screen and (max-width: 1025px){
+    div.navbar-mobile{
+        display: flex;
+    }
+
+    h3.about-h3{
+        width: 60%;
+    }
+}
+
 @media screen and (min-width: 1025px) {
-    
+    ul.navbar-nav{
+        display: flex;
+    }
+
+    ul.navbar-mobile-nav{
+        display: none;
+    }
+    button.navbar-mobile-button{
+        display: none;
+    }
+
 }
 
 @media screen and (min-width: 1281px) {
