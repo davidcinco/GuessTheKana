@@ -39,3 +39,7 @@ div.div-kana-section-hiragana{
 div.div-kana-section-katakana{
     background-color: rgb(243, 55, 55);
 }
+
+div.div-home-concept-description p{
+    margin: 0;
+}

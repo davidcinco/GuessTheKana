@@ -56,6 +56,19 @@
         display: none;
     }
 
+    div.div-home-concepts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    div.div-home-concept-description{
+        display: flex;
+        justify-content: center;
+    }
+    div.div-home-concept-description p{
+        width: 80%;
+    }
+
 }
 
 @media screen and (min-width: 1281px) {

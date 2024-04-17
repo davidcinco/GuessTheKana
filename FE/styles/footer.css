@@ -1,0 +1,42 @@
+footer.footer{
+    position: relative;
+    margin-top: 1.75em;
+    padding: .75em;
+    background-color: rgb(37, 37, 37);
+}
+
+footer.footer a{
+    text-decoration: none;
+}
+
+footer.footer img {
+    display: block;
+    width: 35px;
+}
+
+div.footer-details{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+div.footer-details p{
+    font-size: .9rem;
+    color: white;
+
+}
+
+div.footer-details-find{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+div.footer-details-link{
+    display: flex;
+}
+div.footer-details-link a{
+    margin: 0em 1em;
+}
