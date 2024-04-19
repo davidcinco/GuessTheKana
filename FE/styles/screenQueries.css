@@ -24,12 +24,22 @@
     div.div-kana-section{
         flex-direction: row;
     }
+
+    /* form practice */
+    form.form-container{
+        width: 60%;
+    }
 }
 
 @media screen and (min-width: 801px) {
 
     h3.about-h3{
         width: 80%;
+    }
+
+    /* form practice */
+    form.form-container{
+        width: 50%;
     }
     
 }
@@ -42,6 +52,7 @@
     h3.about-h3{
         width: 60%;
     }
+
 }
 
 @media screen and (min-width: 1025px) {
@@ -67,6 +78,11 @@
     }
     div.div-home-concept-description p{
         width: 80%;
+    }
+
+    /* form practice */
+    form.form-container{
+        width: 36%;
     }
 
 }

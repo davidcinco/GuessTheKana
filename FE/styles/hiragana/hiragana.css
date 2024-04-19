@@ -1,0 +1,56 @@
+main.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button.hiraganaPracticeBtn{
+    margin: .25em;
+    padding: .25em 2.25em;
+    font-size: 1.75rem;
+    background-color: lightseagreen;
+    color: white;
+    border: none;
+    border-radius: .4em;
+}
+
+table.tableChart {
+    padding: .75em;
+    width: 90%;
+    border-radius: .35em;
+    font-size: 1.85rem;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+table.tableChart tr.tableRowChart{
+    background-color: white;
+}
+
+table.tableChart tr.tableRowChart td{
+    border: 1px solid black;
+}
+
+td.tableTd-section{
+    background-color:rgb(215, 48, 48);
+    color: white;
+}
+
+/* form */
+div.form-bg{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    background-color: #00000096;
+    /* right: 15px; */
+    z-index: 9;
+}
+
+form.form-container {
+    width: 80%;
+    padding: 10px;
+    background-color: cadetblue;
+}

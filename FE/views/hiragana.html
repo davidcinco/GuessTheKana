@@ -40,12 +40,149 @@
     </div>
   </nav>
 
-  <h1>Hiragana Charts</h1>
+  <h2 style="text-align: center;">Hiragana | ひらがな</h2>
 
-  <main>
+  <main class="main-container">
+    <button class="hiraganaPracticeBtn" onclick="openForm()">Practice</button>
 
+    <table class="tableChart">
+      <tr>
+        <th></th>
+        <th>A</th>
+        <th>I</th>
+        <th>E</th>
+        <th>U</th>
+        <th>O</th>  
+      </tr>
+      <!--vocals-->
+      <tr class="tableRowChart tableRowChart-vocals">
+        <td></td>
+        <td>あ</td>
+        <td>い</td>
+        <td>う</td>
+        <td>え</td>
+        <td>お</td>
+      </tr>
+      <!--k-->
+      <tr class="tableRowChart tableRowChart-k">
+        <td class="tableTd-section">K</td>
+        <td>か</td>
+        <td>き</td>
+        <td>く</td>
+        <td>け</td>
+        <td>こ</td>
+      </tr>
+      <!--s-->
+      <tr class="tableRowChart tableRowChart-s">
+        <td class="tableTd-section">S</td>
+        <td>さ</td>
+        <td>し</td>
+        <td>す</td>
+        <td>せ</td>
+        <td>そ</td>
+      </tr>
+      <!--t-->
+      <tr class="tableRowChart tableRowChart-t">
+        <td class="tableTd-section">T</td>
+        <td>た</td>
+        <td>ち</td>
+        <td>つ</td>
+        <td>て</td>
+        <td>と</td>
+      </tr>
+      <!--n-->
+      <tr class="tableRowChart tableRowChart-n">
+        <td class="tableTd-section">N</td>
+        <td>な</td>
+        <td>に</td>
+        <td>ぬ</td>
+        <td>ね</td>
+        <td>の</td>
+      </tr>
+      <!--h-->
+      <tr class="tableRowChart tableRowChart-h">
+        <td class="tableTd-section">H</td>
+        <td>は</td>
+        <td>ひ</td>
+        <td>ふ</td>
+        <td>へ</td>
+        <td>ほ</td>
+      </tr>
+      <!--m-->
+      <tr class="tableRowChart tableRowChart-m">
+        <td class="tableTd-section">M</td>
+        <td>ま</td>
+        <td>み</td>
+        <td>む</td>
+        <td>め</td>
+        <td>も</td>
+      </tr>
+      <!--y-->
+      <tr class="tableRowChart tableRowChart-y">
+        <td class="tableTd-section">Y</td>
+        <td>や</td>
+        <td></td>
+        <td>ゆ</td>
+        <td></td>
+        <td>よ</td>
+      </tr>
+      <!--r-->
+      <tr class="tableRowChart tableRowChart-r">
+        <td class="tableTd-section">R</td>
+        <td>ら</td>
+        <td>り</td>
+        <td>る</td>
+        <td>れ</td>
+        <td>ろ</td>
+      </tr>
+      <!--w-->
+      <tr class="tableRowChart tableRowChart-w">
+        <td class="tableTd-section">W</td>
+        <td>わ</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>を</td>
+      </tr>
+      <!--n-->
+      <tr class="tableRowChart tableRowChart-nn">
+        <td class="tableTd-section">N</td>
+        <td>ん</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
   </main>
 
+  <!-- FORM hiragana -->
+  <div id="form-bg" class="form-bg">
+    <form class="form-container" action="">
+      <h1 style="text-align: center;">ひらがな</h1>
+
+      <div>
+        <div class="form-chart">
+          <p></p>
+        </div>
+
+        <div class="form-options">
+          <label for="option" class="option option-1"></label>
+          <input type="radio" name="option" id="option1">
+
+          <label for="option" class="option option-2"></label>
+          <input type="radio" name="option" id="option2">
+
+          <label for="option" class="option option-3"></label>
+          <input type="radio" name="option" id="option3">
+        </div>
+
+        <button type="button">Confirm</button>
+      </div>
+
+      <button type="button" class="btn-cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
 
   <!--FOOTER-->
   <footer id="footer" class="footer">
@@ -68,5 +205,6 @@
   </footer>
 
   <script type="text/javascript" src="../js/navbar.js"></script>
+  <script type="text/javascript" src="/js/hiragana/hiragana.js"></script>
 </body>
 </html>
