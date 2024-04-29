@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/navbar.css">
-    <link rel="stylesheet" href="/styles/about/about.css">
-    <link rel="stylesheet" href="/styles/footer.css">
-    <link rel="stylesheet" href="/styles/screenQueries.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/about/about.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/screenQueries.css">
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,23 +18,24 @@
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
-        <h1><a class="navbar-brand" href="#">Guess The Kana</a></h1>
+        <h1><a class="navbar-brand" href="./home.html">Guess The Kana</a></h1>
       </div>
       <ul class="nav navbar-nav">
-        <li><a href="/views/home.html">Home</a></li>
-        <li><a href="/views/hiragana.html">Hiragana</a></li>
-        <li><a href="/views/katakana.html">Katakana</a></li>
-        <li><a href="/views/about.html">About</a></li>
+        <li><a href="./home.html">Home</a></li>
+        <li><a href="./hiragana.html">Hiragana</a></li>
+        <li><a href="./katakana.html">Katakana</a></li>
+        <li><a href="./about.html">About</a></li>
       </ul>
-      <button class="navbar-mobile-button" onclick="navMobileMenuButton()">X</button>
+
+      <button id="navbar-mobile-button" class="navbar-mobile-button" onclick="navMobileMenuButton()">X</button>
     </div>
 
     <div id="navbar-mobile" class="navbar-mobile">
       <ul class="navbar-mobile-nav">
-        <li><a href="/views/home.html">Home</a></li>
-        <li><a href="/views/hiragana.html">Hiragana</a></li>
-        <li><a href="/views/katakana.html">Katakana</a></li>
-        <li><a href="/views/about.html">About</a></li>
+        <li><a href="./home.html">Home</a></li>
+        <li><a href="./hiragana.html">Hiragana</a></li>
+        <li><a href="./katakana.html">Katakana</a></li>
+        <li><a href="./about.html">About</a></li>
       </ul>
     </div>
   </nav>

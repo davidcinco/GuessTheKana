@@ -1,6 +1,5 @@
 form = document.getElementById("form-bg");
 
-
 function openForm(){
     form.style.display = "flex";
     form.style.justifyContent = "center";

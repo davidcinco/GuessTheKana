@@ -1,4 +1,4 @@
-const API = require('../js/api.js');
+import { API } from './api.js'
 
 async function runApi(){
     const response = await fetch(API);
