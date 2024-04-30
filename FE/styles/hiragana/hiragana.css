@@ -54,3 +54,7 @@ form.form-container {
     padding: 10px;
     background-color: cadetblue;
 }
+
+.activeForm {
+    overflow-y: hidden;
+}
