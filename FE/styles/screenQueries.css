@@ -1,4 +1,4 @@
-/*@media queries for navbar menu/mobile navbar*/
+    /*@media queries for navbar menu/mobile navbar*/
 @media screen and (min-width: 320px) {
     ul.navbar-mobile-nav, li, a{
         font-size: 1rem;
@@ -10,14 +10,12 @@
     h1 a{
         font-size: 1.75rem;
     }
-    
 }
 
 @media screen and (min-width: 480px) {
     ul.navbar-mobile-nav{
         flex-direction: row;
     }
-
 }
 
 @media screen and (min-width: 600px) {
@@ -25,6 +23,10 @@
         flex-direction: row;
     }
 
+    div.div-kana-section a {
+        width: 100%;
+        font-size: 1.75rem;
+    }
     /* form practice */
     form.form-container{
         width: 60%;

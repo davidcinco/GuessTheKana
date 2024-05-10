@@ -1,5 +1,6 @@
 const form = document.getElementById("form-bg");
 const main_section = document.getElementById("main-container");
+hiragana = document.getElementById("hiraganaToGuess");
 
 formOptions = document.querySelectorAll('input[name="option"]');
 
@@ -7,6 +8,7 @@ labelOptions = document.getElementsByClassName("option");
 options = document.getElementsByClassName("options");
 
 /*options hiragana*/
+let hiraganaToGuess;
 let hiraganaChoices = [["", ""], ["", ""], ["", ""]];
 let hiraganaAnswer;
 
@@ -55,16 +57,19 @@ function closeForm() {
 function loadHiraganas(){
     //Insert Three new hiragana charts
     for(let i = 0; i <= 2; i++){
+        console.log(i);
         newValue = Math.floor(Math.random() * hiraganas.length);
 
         hiraganaChoices[i][0] = hiraganas[newValue][0];
         hiraganaChoices[i][1] = hiraganas[newValue][1];
     }
+    hiraganaToGuess = hiraganaChoices[Math.floor(Math.random() * hiraganaChoices.length)][0];
+    hiragana.innerText = hiraganaToGuess;
 
     //add it to options radio
     for(let i = 0; i <= hiraganaChoices.length; i++){
         console.log(hiraganaChoices[i]);
-        options[i].value = hiraganaChoices[i][1];
+        options[i].value = hiraganaChoices[i][0];
         labelOptions[i].innerHTML = hiraganaChoices[i][1];
     }
 }
@@ -73,7 +78,13 @@ function confirmGuess(){
 
     formOptions.forEach( option => {
         if(option['checked']){
-            console.log(`checked - ${option.value}`);
+
+            if(option.value == hiragana){
+                console.log(`Correct Answer - ${option.value}`);
+            }
+            else{
+                console.log("Wrong Answer");
+            }
         }
     });
 }

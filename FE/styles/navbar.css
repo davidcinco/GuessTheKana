@@ -45,7 +45,7 @@ ul.navbar-mobile-nav {
     flex-direction: column;
     margin: 0;
     padding: .5em;
-    width: -webkit-fill-available;
+    width: 100%;
     background-color: rgba(15, 15, 15, 0.079);
 }
 ul.navbar-mobile-nav li{
