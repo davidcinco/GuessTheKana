@@ -160,28 +160,34 @@
   <!-- FORM hiragana -->
   <div id="form-bg" class="form-bg">
     <form class="form-container" action="">
-      <h1 style="text-align: center;">ひらがな</h1>
+      <h1 style="text-align: center; color: white;">ひらがな</h1>
 
-      <div>
+      <div class="playground">
         <div class="form-chart">
           <p class="p-hiraganaToGuess" id="hiraganaToGuess">-</p>
         </div>
 
         <div class="form-options" id="form-options">
-          <label for="option1" class="option option-1">A</label>
+          <!-- <label for="option1" onclick="optionSelected()" class="option option-1"></label>
           <input type="radio" name="option" class="options" id="option1" value="option1">
-
-          <label for="option2" class="option option-2">B</label>
-            <input type="radio" name="option" class="options" id="option2" value="option2">
-
-          <label for="option3" class="option option-3">C</label>
-            <input type="radio" name="option" class="options" id="option3" value="option3">
+          
+          <label for="option2" onclick="optionSelected()" class="option option-2"></label>
+          <input type="radio" name="option" class="options" id="option2" value="option2">
+        
+          <label for="option3" onclick="optionSelected()" class="option option-3"></label>
+          <input type="radio" name="option" class="options" id="option3" value="option3"> -->
+            <input type="button" value="" class="options" id="option1"  onclick="optionSelected(this.id)">
+            <input type="button" value="" class="options" id="option2"  onclick="optionSelected(this.id)">
+            <input type="button" value="" class="options" id="option3"  onclick="optionSelected(this.id)">
+        
         </div>
 
-        <button type="button" onclick="confirmGuess()">Confirm</button>
       </div>
-
-      <button type="button" class="btn-cancel" onclick="closeForm()">Close</button>
+      
+      <div class="div-form-buttons">
+        <button type="button" onclick="confirmGuess()">Confirm</button>
+        <button type="button" class="btn-cancel" onclick="closeForm()">Close</button>
+      </div>
     </form>
   </div>
 

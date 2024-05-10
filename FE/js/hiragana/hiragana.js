@@ -1,11 +1,11 @@
 const form = document.getElementById("form-bg");
 const main_section = document.getElementById("main-container");
-hiragana = document.getElementById("hiraganaToGuess");
+let hiragana = document.getElementById("hiraganaToGuess");
 
-formOptions = document.querySelectorAll('input[name="option"]');
+let formOptions = document.querySelectorAll('input[name="option"]');
 
-labelOptions = document.getElementsByClassName("option");
-options = document.getElementsByClassName("options");
+// let labelOptions = document.getElementsByClassName("option");
+let options = document.getElementsByClassName("options");
 
 /*options hiragana*/
 let hiraganaToGuess;
@@ -69,10 +69,15 @@ function loadHiraganas(){
     //add it to options radio
     for(let i = 0; i <= hiraganaChoices.length; i++){
         console.log(hiraganaChoices[i]);
-        options[i].value = hiraganaChoices[i][0];
-        labelOptions[i].innerHTML = hiraganaChoices[i][1];
+        options[i].value = hiraganaChoices[i][1];
+        // labelOptions[i].innerHTML = hiraganaChoices[i][1];
     }
 }
+
+function optionSelected(option){
+    hiraganaAnswer = option.value;
+    console.log(hiraganaAnswer);
+}   
 
 function confirmGuess(){
 
